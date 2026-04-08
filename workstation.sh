@@ -28,6 +28,11 @@ cp kubectl /usr/local/bin/kubectl
 curl -sLo /usr/local/bin/kubens https://raw.githubusercontent.com/ahmetb/kubectx/master/kubens
 chmod +x /usr/local/bin/kubens
 
+# k9s
+curl -sLO "https://github.com/derailed/k9s/releases/latest/download/k9s_Linux_amd64.tar.gz"
+tar -xzf k9s_Linux_amd64.tar.gz -C /tmp && rm k9s_Linux_amd64.tar.gz
+sudo install -m 0755 /tmp/k9s /usr/local/bin && rm /tmp/k9s
+
 # AWS CLI configure for ec2-user
 mkdir -p /home/ec2-user/.aws
 cat <<EOF > /home/ec2-user/.aws/credentials
