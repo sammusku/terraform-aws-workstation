@@ -57,4 +57,4 @@ sudo -u ec2-user git clone https://github.com/sammusku/eksctl.git
 cd eksctl
 sudo -u ec2-user /usr/local/bin/eksctl create cluster -f eks.yaml
 
-sudo -u ec2-user /usr/local/bin/aws eks update-kubeconfig --region us-east-1 --name roboshop
+sudo -u ec2-user /usr/local/bin/aws eks update-kubeconfig --region us-east-1 --name roboshop 
